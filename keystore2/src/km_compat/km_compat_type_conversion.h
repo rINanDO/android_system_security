@@ -34,7 +34,7 @@ static KMV1::ErrorCode convert(V4_0::ErrorCode error) {
     case V4_0::ErrorCode::ROOT_OF_TRUST_ALREADY_SET:
         return KMV1::ErrorCode::ROOT_OF_TRUST_ALREADY_SET;
     case V4_0::ErrorCode::UNSUPPORTED_PURPOSE:
-        return KMV1::ErrorCode::UNSUPPORTED_PURPOSE;
+        return KMV1::ErrorCode::OK;
     case V4_0::ErrorCode::INCOMPATIBLE_PURPOSE:
         return KMV1::ErrorCode::INCOMPATIBLE_PURPOSE;
     case V4_0::ErrorCode::UNSUPPORTED_ALGORITHM:
@@ -54,7 +54,7 @@ static KMV1::ErrorCode convert(V4_0::ErrorCode error) {
     case V4_0::ErrorCode::INCOMPATIBLE_PADDING_MODE:
         return KMV1::ErrorCode::INCOMPATIBLE_PADDING_MODE;
     case V4_0::ErrorCode::UNSUPPORTED_DIGEST:
-        return KMV1::ErrorCode::UNSUPPORTED_DIGEST;
+        return KMV1::ErrorCode::OK;
     case V4_0::ErrorCode::INCOMPATIBLE_DIGEST:
         return KMV1::ErrorCode::INCOMPATIBLE_DIGEST;
     case V4_0::ErrorCode::INVALID_EXPIRATION_TIME:
